@@ -1,28 +1,20 @@
 package com.sample.crud;
 
 public class reverseString {
-	   public void reverseWordInMyString(String str)
-	   {
-		String[] words = str.split(" ");
-		String reversedString = "";
-		for (int i = 0; i < words.length; i++)
-	        {
-	           String word = words[i]; 
-	           String reverseWord = "";
-	           for (int j = word.length()-1; j >= 0; j--) 
-	           {
-			reverseWord = reverseWord + word.charAt(j);
-		   }
-		   reversedString = reversedString + reverseWord + " ";
-		}
-		System.out.println(str);
-		System.out.println(reversedString);
-	   }
-	   public static void main(String[] args) 
-	   {
-		reverseString obj = new reverseString();
-		obj.reverseWordInMyString("Hello World");
-		obj.reverseWordInMyString("My name is Nandha Krishna");
-	   }
+	     public static void main(String[] args) 
+	    { 
+	        String input = "Nandha Krishna"; 
+	  
+	        StringBuilder input1 = new StringBuilder(); 
+	  
+	        // append a string into StringBuilder input1 
+	        input1.append(input); 
+	  
+	        // reverse StringBuilder input1 
+	        input1 = input1.reverse(); 
+	  
+	        // print reversed String 
+	        System.out.println(input1); 
+	    } 
+} 
 
-}
